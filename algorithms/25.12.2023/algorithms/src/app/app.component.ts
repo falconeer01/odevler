@@ -35,14 +35,12 @@ export class AppComponent {
 
 
   // 2-Klavyeden girilen bir sayının palindrom olup olmadığını kontrol eden algoritmayı ve JavaScript kodunu yazınız. (Palindrom sayılar, tersten okunduğunda aynı olan sayılardır. Örneğin, 121 veya 1331.)
-    s:string = "";
-    b:boolean = false;
+    // s:string = "";
+    // b:boolean = false;
 
-    isPalindrom(){
-      let newStr = this.s.split(" ").reverse().join(" ");
-      
-      newStr === this.s ? this.b = true : this.b = false;
-
-      return this.b;
-    }
+    // isPalindrom(){
+    //   let str = this.s.split("").reverse().join("");
+    //   str === this.s ? this.b = true : this.b = false;
+    //   return this.b
+    // }
 }
