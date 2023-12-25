@@ -6,6 +6,11 @@
 :root{
     --bs-primary-rgb: rgb(41, 40, 112);
     --bs-secondary-rgb: rgb(239, 171, 71);
+    --bs-btn-close-color: white;
+}
+
+.btn-close{
+    color: var(--bs-btn-close-color);
 }
 
 *:not(p){
@@ -465,19 +470,13 @@
     color: #fff;
 }
 
-/* for large screens */
-/* @media screen and (min-width: 1024) {
-    .welcomer-man{
-        width: 916px;
-        height: 493px;
-        background-image: url(assets/img/welcomer-man.png);
-        background-repeat: no-repeat;
-        background-size: contain;
-        background-position: center center;
-        margin: 33px auto 0;
-        justify-self: flex-end;
-    }
-} */
+.oc-body-text{
+    font-size: 22px;
+}
+
+.offcanvas, .offcanvas-header{
+    background: #000;
+}
 
 /* for medium screens */
 @media only screen and (min-width: 768px) and (max-width: 1140px) {
@@ -524,6 +523,10 @@
         box-shadow: 5px 5px 0px 0 rgba(0,0,0,0.1);
         padding: 60px;
     }
+
+    .offcanvas{
+        display: none;
+    }
 }
 
 @media screen and (max-width: 1000px){
@@ -543,6 +546,10 @@
         margin: 10px auto 0;
         box-shadow: 5px 5px 0px 0 rgba(0,0,0,0.1);
         padding: 60px;
+    }
+
+    .offcanvas{
+        display: none;
     }
 }
 
@@ -575,6 +582,10 @@
     }
 
     .p-right-panel{
+        display: none;
+    }
+
+    .offcanvas{
         display: none;
     }
 }
@@ -699,5 +710,9 @@
     .price{
         height: 100%;
         padding-bottom: 150px;
+    }
+
+    .offcanvas{
+        display: none;
     }
 }
