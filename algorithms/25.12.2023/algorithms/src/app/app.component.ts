@@ -43,4 +43,34 @@ export class AppComponent {
     //   str === this.s ? this.b = true : this.b = false;
     //   return this.b
     // }
+
+
+  // 3-Klavyeden girilecek X ve Y sayıları arasındaki asal sayıları bulan algoritmayı ve JavaScript kodunu yazınız.
+    x:number = 0;
+    n:number = 0;
+    numbers:number[] = [];
+
+    isPrime(num:number):boolean{
+      let bool = true;
+
+      for(let i=2; i<=Math.sqrt(num); i++){
+        if(num%i===0){
+          bool = false;
+          break;
+        }
+      }
+
+      return bool;
+    }
+
+    primeLoop(){
+      for(let i=this.x; i<=this.n; i++){
+        if(this.isPrime(i) === true){
+          this.numbers.push(i);
+        }else{
+          console.log("lasdkgf");
+        }
+      }
+      return this.numbers;
+    }
 }
